@@ -1,0 +1,54 @@
+{
+  "took": 41,
+	"timed_out": false,
+	"_shards": {
+		"total": 5,
+		"successful": 5,
+		"failed": 0
+	},
+	"hits": {
+		"total": 141,
+		"max_score": 0.0,
+		"hits": []
+	},
+	"aggregations": {
+		"PROJECT": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+				"key": "FC",
+				"doc_count": 141,
+				"MARKETING_DATE": {
+					"buckets": [{
+						"key_as_string": "2016-08-28",
+						"key": 1472342400000,
+						"doc_count": 141,
+						"PIXEL_CAMP_ID": {
+							"doc_count_error_upper_bound": 0,
+							"sum_other_doc_count": 0,
+							"buckets": [{
+								"key": "000003",
+								"doc_count": 115,
+								"MKT_REGISTRATIONS": {
+									"value": 115
+								}
+							}, {
+								"key": "000004",
+								"doc_count": 24,
+								"MKT_REGISTRATIONS": {
+									"value": 24
+								}
+							}, {
+								"key": "000002",
+								"doc_count": 2,
+								"MKT_REGISTRATIONS": {
+									"value": 2
+								}
+							}]
+						}
+					}]
+				}
+			}]
+		}
+	}
+}
